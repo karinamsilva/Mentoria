@@ -21,3 +21,22 @@ final class AppCoordinator {
     }
 
 }
+
+class DetailCoordinator {
+    let navigationController: UINavigationController
+    
+    init(navigationController: UINavigationController) {
+        self.navigationController = navigationController
+    }
+    
+    func start() {
+        let controller = DetailViewController()
+        navigationController.pushViewController(controller, animated: false)
+    }
+    
+    func navigateToDetail(with list: Character) {
+        let controller = DetailViewController()
+        UINavigationController().pushViewController(controller, animated: false)
+    }
+
+}

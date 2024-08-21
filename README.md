@@ -6,9 +6,9 @@
 
 
 
-- [ ] Adicionar Sessões de 10 em 10 itens
-- [ ] Colocar busca
+- [ x ] Adicionar Sessões de 10 em 10 itens
+- [x ] Colocar busca
 - [ ] usar uma API
-- [ ] abstrair constraints
-- [ ] separar responsabilidades
-- [ ] 15 dias
+- [ x ] abstrair constraints
+- [ x ] separar responsabilidades
+- [ ?  ] 15 dias

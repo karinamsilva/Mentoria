@@ -6,16 +6,35 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SimpleViewCell: UICollectionViewCell {
     
     static let identifier = "SimpleCell"
     
-    private let titleLabel: UILabel = {
+    private let characterName: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
+    }()
+    
+    let characterImage: UIImageView = {
+        let image = UIImageView()
+        image.translatesAutoresizingMaskIntoConstraints = false
+        image.contentMode = .scaleAspectFit
+        return image
+    }()
+    
+    let stackView: UIStackView = {
+        let stack = UIStackView()
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .vertical
+        stack.distribution = .fill
+        stack.alignment = .center
+        stack.spacing = 5
+        return stack
     }()
     
     override init(frame: CGRect) {
@@ -25,7 +44,9 @@ class SimpleViewCell: UICollectionViewCell {
     }
     
     func configureUI() {
-        contentView.addSubview(titleLabel)
+        contentView.addSubview(stackView)
+        stackView.addArrangedSubview(characterImage)
+        stackView.addArrangedSubview(characterName)
         contentView.backgroundColor = .systemBlue
         contentView.layer.cornerRadius = 8
     }
@@ -34,15 +55,16 @@ class SimpleViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(title: String) {
-        titleLabel.text = title
+    func configure(with character: Character) {
+        characterName.text =  character.name
+        characterImage.kf.setImage(with: URL(string: character.image))
     }
     
     func setUpConstraints() {
-        titleLabel.centerX(to: centerXAnchor)
-        titleLabel.centerY(to: centerYAnchor)
-        titleLabel.leading(to: contentView.leadingAnchor, constant: 8)
-        titleLabel.trailing(to: contentView.trailingAnchor, constant: -8)
+        stackView.top(to: contentView.topAnchor, constant: 5)
+        stackView.bottom(to: contentView.bottomAnchor, constant: -5)
+        stackView.leading(to: contentView.leadingAnchor)
+        stackView.trailing(to: contentView.trailingAnchor)
     }
 }
 

@@ -7,19 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8424A81B2C54642200C148F2 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424A81A2C54642200C148F2 /* CollectionHeaderView.swift */; };
+		843D782D2C60021100027D74 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D782C2C60021100027D74 /* Service.swift */; };
+		843D782F2C602CE800027D74 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D782E2C602CE800027D74 /* ViewModel.swift */; };
+		8463F6652C6E590700B27903 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463F6642C6E590700B27903 /* UIImageView+Extension.swift */; };
+		8463F6672C6E5DDA00B27903 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463F6662C6E5DDA00B27903 /* DetailViewController.swift */; };
+		8463F6692C6E5E8300B27903 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463F6682C6E5E8300B27903 /* DetailViewModel.swift */; };
 		847B83B42C4D61F700D70757 /* MentoriaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B83B32C4D61F700D70757 /* MentoriaApp.swift */; };
 		847B83B62C4D61F700D70757 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B83B52C4D61F700D70757 /* ContentView.swift */; };
 		847B83B82C4D620200D70757 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847B83B72C4D620200D70757 /* Assets.xcassets */; };
 		847B83BB2C4D620200D70757 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 847B83BA2C4D620200D70757 /* Preview Assets.xcassets */; };
 		847B83C22C4D663700D70757 /* MentoriaViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B83C12C4D663700D70757 /* MentoriaViewRepresentable.swift */; };
 		847B83C42C4D66CA00D70757 /* AppCoordinator .swift in Sources */ = {isa = PBXBuildFile; fileRef = 847B83C32C4D66CA00D70757 /* AppCoordinator .swift */; };
+		84C1BD8B2C756D53005C2D12 /* DetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C1BD8A2C756D53005C2D12 /* DetailViewCell.swift */; };
+		84C1BD8F2C765660005C2D12 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84C1BD8E2C765660005C2D12 /* Podfile */; };
+		84C927E62C6D83A7009813E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C927E52C6D83A7009813E8 /* Constants.swift */; };
+		84C927E92C6D96BA009813E8 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C927E82C6D96BA009813E8 /* CharactersModel.swift */; };
 		84CB1CFC2C4D8104003BCA3A /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB1CFB2C4D8104003BCA3A /* SimpleViewController.swift */; };
 		84CB1CFE2C4DBDD4003BCA3A /* SimpleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB1CFD2C4DBDD4003BCA3A /* SimpleViewCell.swift */; };
 		84CB1D002C4DBE1D003BCA3A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB1CFF2C4DBE1D003BCA3A /* Extensions.swift */; };
 		84CB1D062C4DC95D003BCA3A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84CB1D052C4DC95D003BCA3A /* README.md */; };
+		85EBAE4D9AAE2F9568802362 /* Pods_Mentoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8E89C37A7237F1182CFF56 /* Pods_Mentoria.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A753954A7DECDF3B0FEF2CB /* Pods-Mentoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentoria.debug.xcconfig"; path = "Target Support Files/Pods-Mentoria/Pods-Mentoria.debug.xcconfig"; sourceTree = "<group>"; };
+		7B8E89C37A7237F1182CFF56 /* Pods_Mentoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mentoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8424A81A2C54642200C148F2 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		843D782C2C60021100027D74 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		843D782E2C602CE800027D74 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8463F6642C6E590700B27903 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		8463F6662C6E5DDA00B27903 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8463F6682C6E5E8300B27903 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		847B83B02C4D61F700D70757 /* Mentoria.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mentoria.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847B83B32C4D61F700D70757 /* MentoriaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoriaApp.swift; sourceTree = "<group>"; };
 		847B83B52C4D61F700D70757 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -27,10 +46,15 @@
 		847B83BA2C4D620200D70757 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		847B83C12C4D663700D70757 /* MentoriaViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentoriaViewRepresentable.swift; sourceTree = "<group>"; };
 		847B83C32C4D66CA00D70757 /* AppCoordinator .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCoordinator .swift"; sourceTree = "<group>"; };
+		84C1BD8A2C756D53005C2D12 /* DetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewCell.swift; sourceTree = "<group>"; };
+		84C1BD8E2C765660005C2D12 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		84C927E52C6D83A7009813E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		84C927E82C6D96BA009813E8 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
 		84CB1CFB2C4D8104003BCA3A /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
 		84CB1CFD2C4DBDD4003BCA3A /* SimpleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewCell.swift; sourceTree = "<group>"; };
 		84CB1CFF2C4DBE1D003BCA3A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		84CB1D052C4DC95D003BCA3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		E6BB8566491C2CC6842416D3 /* Pods-Mentoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentoria.release.xcconfig"; path = "Target Support Files/Pods-Mentoria/Pods-Mentoria.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +62,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85EBAE4D9AAE2F9568802362 /* Pods_Mentoria.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8424A8192C54640B00C148F2 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				8424A81A2C54642200C148F2 /* CollectionHeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		847B83A72C4D61F700D70757 = {
 			isa = PBXGroup;
 			children = (
+				84C1BD8E2C765660005C2D12 /* Podfile */,
 				847B83B22C4D61F700D70757 /* Mentoria */,
 				847B83B12C4D61F700D70757 /* Products */,
+				E615D42F0D3AEAD540BC08D7 /* Pods */,
+				FD6EB6151C6BA84F1B646351 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,13 +99,16 @@
 		847B83B22C4D61F700D70757 /* Mentoria */ = {
 			isa = PBXGroup;
 			children = (
+				84CB1D012C4DC0B2003BCA3A /* View */,
+				84C927E72C6D96A6009813E8 /* Model */,
+				84C927EA2C6D96CF009813E8 /* ViewModel */,
 				84CB1D042C4DC194003BCA3A /* SwiftUiConfigs */,
 				847B83B92C4D620200D70757 /* Preview Content */,
 				84CB1CFA2C4D80F0003BCA3A /* Aula1 */,
 				847B83B72C4D620200D70757 /* Assets.xcassets */,
 				84CB1D032C4DC17E003BCA3A /* Coordinators */,
-				84CB1D012C4DC0B2003BCA3A /* View */,
 				84CB1D022C4DC0BB003BCA3A /* Utils */,
+				84E7BC782C768F6B00E13F35 /* Service */,
 			);
 			path = Mentoria;
 			sourceTree = "<group>";
@@ -82,10 +121,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		84C927E72C6D96A6009813E8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84C927E82C6D96BA009813E8 /* CharactersModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84C927EA2C6D96CF009813E8 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8463F6682C6E5E8300B27903 /* DetailViewModel.swift */,
+				843D782E2C602CE800027D74 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		84CB1CFA2C4D80F0003BCA3A /* Aula1 */ = {
 			isa = PBXGroup;
 			children = (
 				84CB1CFB2C4D8104003BCA3A /* SimpleViewController.swift */,
+				8463F6662C6E5DDA00B27903 /* DetailViewController.swift */,
 			);
 			name = Aula1;
 			sourceTree = "<group>";
@@ -94,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				84CB1CFD2C4DBDD4003BCA3A /* SimpleViewCell.swift */,
+				84C1BD8A2C756D53005C2D12 /* DetailViewCell.swift */,
+				8424A8192C54640B00C148F2 /* Header */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -102,7 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				84CB1CFF2C4DBE1D003BCA3A /* Extensions.swift */,
+				8463F6642C6E590700B27903 /* UIImageView+Extension.swift */,
 				84CB1D052C4DC95D003BCA3A /* README.md */,
+				84C927E52C6D83A7009813E8 /* Constants.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -125,6 +186,31 @@
 			path = SwiftUiConfigs;
 			sourceTree = "<group>";
 		};
+		84E7BC782C768F6B00E13F35 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				843D782C2C60021100027D74 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E615D42F0D3AEAD540BC08D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A753954A7DECDF3B0FEF2CB /* Pods-Mentoria.debug.xcconfig */,
+				E6BB8566491C2CC6842416D3 /* Pods-Mentoria.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FD6EB6151C6BA84F1B646351 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B8E89C37A7237F1182CFF56 /* Pods_Mentoria.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +218,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 847B83BE2C4D620200D70757 /* Build configuration list for PBXNativeTarget "Mentoria" */;
 			buildPhases = (
+				61F95F87B66C6E385C3876C1 /* [CP] Check Pods Manifest.lock */,
 				847B83AC2C4D61F700D70757 /* Sources */,
 				847B83AD2C4D61F700D70757 /* Frameworks */,
 				847B83AE2C4D61F700D70757 /* Resources */,
+				69D41D26D1222FD8C49E96B1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -185,24 +273,76 @@
 			files = (
 				84CB1D062C4DC95D003BCA3A /* README.md in Resources */,
 				847B83BB2C4D620200D70757 /* Preview Assets.xcassets in Resources */,
+				84C1BD8F2C765660005C2D12 /* Podfile in Resources */,
 				847B83B82C4D620200D70757 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		61F95F87B66C6E385C3876C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mentoria-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69D41D26D1222FD8C49E96B1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mentoria/Pods-Mentoria-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mentoria/Pods-Mentoria-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mentoria/Pods-Mentoria-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		847B83AC2C4D61F700D70757 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84C927E92C6D96BA009813E8 /* CharactersModel.swift in Sources */,
+				843D782F2C602CE800027D74 /* ViewModel.swift in Sources */,
+				8463F6652C6E590700B27903 /* UIImageView+Extension.swift in Sources */,
+				84C927E62C6D83A7009813E8 /* Constants.swift in Sources */,
 				84CB1CFC2C4D8104003BCA3A /* SimpleViewController.swift in Sources */,
 				847B83C22C4D663700D70757 /* MentoriaViewRepresentable.swift in Sources */,
 				847B83C42C4D66CA00D70757 /* AppCoordinator .swift in Sources */,
 				84CB1CFE2C4DBDD4003BCA3A /* SimpleViewCell.swift in Sources */,
 				847B83B62C4D61F700D70757 /* ContentView.swift in Sources */,
+				843D782D2C60021100027D74 /* Service.swift in Sources */,
+				8424A81B2C54642200C148F2 /* CollectionHeaderView.swift in Sources */,
 				847B83B42C4D61F700D70757 /* MentoriaApp.swift in Sources */,
 				84CB1D002C4DBE1D003BCA3A /* Extensions.swift in Sources */,
+				84C1BD8B2C756D53005C2D12 /* DetailViewCell.swift in Sources */,
+				8463F6692C6E5E8300B27903 /* DetailViewModel.swift in Sources */,
+				8463F6672C6E5DDA00B27903 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +465,7 @@
 		};
 		847B83BF2C4D620200D70757 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A753954A7DECDF3B0FEF2CB /* Pods-Mentoria.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -353,6 +494,7 @@
 		};
 		847B83C02C4D620200D70757 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6BB8566491C2CC6842416D3 /* Pods-Mentoria.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
