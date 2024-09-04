@@ -50,4 +50,11 @@ extension UIView {
         return self
     }
     
+    @discardableResult
+    func height(to constant: CGFloat) -> Self {
+        translatesAutoresizingMaskIntoConstraints = false
+        heightAnchor.constraint(equalToConstant: constant).isActive = true 
+        return self
+    }
+    
 }

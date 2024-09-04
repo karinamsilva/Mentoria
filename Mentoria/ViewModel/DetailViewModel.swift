@@ -9,11 +9,14 @@ import Foundation
 
 class DetailViewModel {
     
-    var characterList: Character?
+    var character: Character
+    
+    init(character: Character) {
+        self.character = character
+    }
     
     
     func setupScreen() {
-        print(characterList?.name)
     }
     
 }

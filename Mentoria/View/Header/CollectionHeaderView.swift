@@ -10,7 +10,6 @@ class CollectionHeaderView: UICollectionReusableView {
     
     private let sectionTitle: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .black
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
@@ -35,5 +34,5 @@ class CollectionHeaderView: UICollectionReusableView {
     
     func configureSectionTitle(with text: String) {
         sectionTitle.text = text
-    } 
+    }
 }

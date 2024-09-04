@@ -21,11 +21,12 @@ class Service {
                 let decoder = try JSONDecoder().decode([Character].self, from: data)
                 completion(.success(decoder))
             } catch {
+                print(String(describing: error))
                 print(String(describing: error.localizedDescription))
                 completion(.failure(.decoding))
             }
         }
         request.resume()
-    } 
+    }
 }
 

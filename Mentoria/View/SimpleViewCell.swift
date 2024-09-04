@@ -14,27 +14,9 @@ class SimpleViewCell: UICollectionViewCell {
     
     private let characterName: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
-    }()
-    
-    let characterImage: UIImageView = {
-        let image = UIImageView()
-        image.translatesAutoresizingMaskIntoConstraints = false
-        image.contentMode = .scaleAspectFit
-        return image
-    }()
-    
-    let stackView: UIStackView = {
-        let stack = UIStackView()
-        stack.translatesAutoresizingMaskIntoConstraints = false
-        stack.axis = .vertical
-        stack.distribution = .fill
-        stack.alignment = .center
-        stack.spacing = 5
-        return stack
     }()
     
     override init(frame: CGRect) {
@@ -44,9 +26,7 @@ class SimpleViewCell: UICollectionViewCell {
     }
     
     func configureUI() {
-        contentView.addSubview(stackView)
-        stackView.addArrangedSubview(characterImage)
-        stackView.addArrangedSubview(characterName)
+        contentView.addSubview(characterName)
         contentView.backgroundColor = .systemBlue
         contentView.layer.cornerRadius = 8
     }
@@ -57,20 +37,12 @@ class SimpleViewCell: UICollectionViewCell {
     
     func configure(with character: Character) {
         characterName.text =  character.name
-        characterImage.kf.setImage(with: URL(string: character.image))
     }
     
     func setUpConstraints() {
-        stackView.top(to: contentView.topAnchor, constant: 5)
-        stackView.bottom(to: contentView.bottomAnchor, constant: -5)
-        stackView.leading(to: contentView.leadingAnchor)
-        stackView.trailing(to: contentView.trailingAnchor)
+        characterName.top(to: contentView.topAnchor, constant: 5)
+        characterName.bottom(to: contentView.bottomAnchor, constant: -5)
+        characterName.leading(to: contentView.leadingAnchor)
+        characterName.trailing(to: contentView.trailingAnchor)
     }
 }
-
-
-
-
-
-
-

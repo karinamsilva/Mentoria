@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8424A81B2C54642200C148F2 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8424A81A2C54642200C148F2 /* CollectionHeaderView.swift */; };
+		842CA5792C88EA05008D116F /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CA5782C88EA05008D116F /* UIStackView+Extension.swift */; };
+		842CA57B2C88EA1E008D116F /* UILabelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842CA57A2C88EA1E008D116F /* UILabelExtension.swift */; };
 		843D782D2C60021100027D74 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D782C2C60021100027D74 /* Service.swift */; };
 		843D782F2C602CE800027D74 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843D782E2C602CE800027D74 /* ViewModel.swift */; };
 		8463F6652C6E590700B27903 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8463F6642C6E590700B27903 /* UIImageView+Extension.swift */; };
@@ -23,9 +25,9 @@
 		84C1BD8F2C765660005C2D12 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 84C1BD8E2C765660005C2D12 /* Podfile */; };
 		84C927E62C6D83A7009813E8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C927E52C6D83A7009813E8 /* Constants.swift */; };
 		84C927E92C6D96BA009813E8 /* CharactersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C927E82C6D96BA009813E8 /* CharactersModel.swift */; };
-		84CB1CFC2C4D8104003BCA3A /* SimpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB1CFB2C4D8104003BCA3A /* SimpleViewController.swift */; };
+		84CB1CFC2C4D8104003BCA3A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB1CFB2C4D8104003BCA3A /* MainViewController.swift */; };
 		84CB1CFE2C4DBDD4003BCA3A /* SimpleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB1CFD2C4DBDD4003BCA3A /* SimpleViewCell.swift */; };
-		84CB1D002C4DBE1D003BCA3A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB1CFF2C4DBE1D003BCA3A /* Extensions.swift */; };
+		84CB1D002C4DBE1D003BCA3A /* Constraints+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB1CFF2C4DBE1D003BCA3A /* Constraints+Extension.swift */; };
 		84CB1D062C4DC95D003BCA3A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 84CB1D052C4DC95D003BCA3A /* README.md */; };
 		85EBAE4D9AAE2F9568802362 /* Pods_Mentoria.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8E89C37A7237F1182CFF56 /* Pods_Mentoria.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +36,8 @@
 		4A753954A7DECDF3B0FEF2CB /* Pods-Mentoria.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentoria.debug.xcconfig"; path = "Target Support Files/Pods-Mentoria/Pods-Mentoria.debug.xcconfig"; sourceTree = "<group>"; };
 		7B8E89C37A7237F1182CFF56 /* Pods_Mentoria.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mentoria.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8424A81A2C54642200C148F2 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		842CA5782C88EA05008D116F /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		842CA57A2C88EA1E008D116F /* UILabelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtension.swift; sourceTree = "<group>"; };
 		843D782C2C60021100027D74 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		843D782E2C602CE800027D74 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		8463F6642C6E590700B27903 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -50,9 +54,9 @@
 		84C1BD8E2C765660005C2D12 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		84C927E52C6D83A7009813E8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		84C927E82C6D96BA009813E8 /* CharactersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersModel.swift; sourceTree = "<group>"; };
-		84CB1CFB2C4D8104003BCA3A /* SimpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewController.swift; sourceTree = "<group>"; };
+		84CB1CFB2C4D8104003BCA3A /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		84CB1CFD2C4DBDD4003BCA3A /* SimpleViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleViewCell.swift; sourceTree = "<group>"; };
-		84CB1CFF2C4DBE1D003BCA3A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		84CB1CFF2C4DBE1D003BCA3A /* Constraints+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Constraints+Extension.swift"; sourceTree = "<group>"; };
 		84CB1D052C4DC95D003BCA3A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		E6BB8566491C2CC6842416D3 /* Pods-Mentoria.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mentoria.release.xcconfig"; path = "Target Support Files/Pods-Mentoria/Pods-Mentoria.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -75,6 +79,17 @@
 				8424A81A2C54642200C148F2 /* CollectionHeaderView.swift */,
 			);
 			path = Header;
+			sourceTree = "<group>";
+		};
+		842CA57C2C88EA5E008D116F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				84CB1CFF2C4DBE1D003BCA3A /* Constraints+Extension.swift */,
+				842CA5782C88EA05008D116F /* UIStackView+Extension.swift */,
+				842CA57A2C88EA1E008D116F /* UILabelExtension.swift */,
+				8463F6642C6E590700B27903 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		847B83A72C4D61F700D70757 = {
@@ -104,7 +119,7 @@
 				84C927EA2C6D96CF009813E8 /* ViewModel */,
 				84CB1D042C4DC194003BCA3A /* SwiftUiConfigs */,
 				847B83B92C4D620200D70757 /* Preview Content */,
-				84CB1CFA2C4D80F0003BCA3A /* Aula1 */,
+				84CB1CFA2C4D80F0003BCA3A /* Controllers */,
 				847B83B72C4D620200D70757 /* Assets.xcassets */,
 				84CB1D032C4DC17E003BCA3A /* Coordinators */,
 				84CB1D022C4DC0BB003BCA3A /* Utils */,
@@ -138,13 +153,13 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		84CB1CFA2C4D80F0003BCA3A /* Aula1 */ = {
+		84CB1CFA2C4D80F0003BCA3A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				84CB1CFB2C4D8104003BCA3A /* SimpleViewController.swift */,
+				84CB1CFB2C4D8104003BCA3A /* MainViewController.swift */,
 				8463F6662C6E5DDA00B27903 /* DetailViewController.swift */,
 			);
-			name = Aula1;
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 		84CB1D012C4DC0B2003BCA3A /* View */ = {
@@ -160,8 +175,7 @@
 		84CB1D022C4DC0BB003BCA3A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				84CB1CFF2C4DBE1D003BCA3A /* Extensions.swift */,
-				8463F6642C6E590700B27903 /* UIImageView+Extension.swift */,
+				842CA57C2C88EA5E008D116F /* Extensions */,
 				84CB1D052C4DC95D003BCA3A /* README.md */,
 				84C927E52C6D83A7009813E8 /* Constants.swift */,
 			);
@@ -331,17 +345,19 @@
 				843D782F2C602CE800027D74 /* ViewModel.swift in Sources */,
 				8463F6652C6E590700B27903 /* UIImageView+Extension.swift in Sources */,
 				84C927E62C6D83A7009813E8 /* Constants.swift in Sources */,
-				84CB1CFC2C4D8104003BCA3A /* SimpleViewController.swift in Sources */,
+				84CB1CFC2C4D8104003BCA3A /* MainViewController.swift in Sources */,
 				847B83C22C4D663700D70757 /* MentoriaViewRepresentable.swift in Sources */,
 				847B83C42C4D66CA00D70757 /* AppCoordinator .swift in Sources */,
+				842CA5792C88EA05008D116F /* UIStackView+Extension.swift in Sources */,
 				84CB1CFE2C4DBDD4003BCA3A /* SimpleViewCell.swift in Sources */,
 				847B83B62C4D61F700D70757 /* ContentView.swift in Sources */,
 				843D782D2C60021100027D74 /* Service.swift in Sources */,
 				8424A81B2C54642200C148F2 /* CollectionHeaderView.swift in Sources */,
 				847B83B42C4D61F700D70757 /* MentoriaApp.swift in Sources */,
-				84CB1D002C4DBE1D003BCA3A /* Extensions.swift in Sources */,
+				84CB1D002C4DBE1D003BCA3A /* Constraints+Extension.swift in Sources */,
 				84C1BD8B2C756D53005C2D12 /* DetailViewCell.swift in Sources */,
 				8463F6692C6E5E8300B27903 /* DetailViewModel.swift in Sources */,
+				842CA57B2C88EA1E008D116F /* UILabelExtension.swift in Sources */,
 				8463F6672C6E5DDA00B27903 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

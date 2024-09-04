@@ -7,23 +7,31 @@
 
 import UIKit
 
-class SimpleViewController: UIViewController {
+class MainViewController: UIViewController {
     
     private let sectionInsets = UIEdgeInsets(top: 16, left: 16, bottom: 16, right: 16)
     private let viewModel = ViewModel(service: Service())
-    var filtered: [Sections] = []
-    weak var detailCoordinator: AppCoordinator?
+    private var filtered: [Sections] = []
+    private var detailCoordinator: AppCoordinator
     
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.backgroundColor = .white
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
         return collectionView
     }()
     
     private let searchBar = UISearchController()
+    
+    init(detailCoordinator: AppCoordinator) {
+        self.detailCoordinator = detailCoordinator
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +39,12 @@ class SimpleViewController: UIViewController {
         registerCollection()
         setupView()
         setupConstraints()
-        title = "Characters"
         requestData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         collectionView.reloadData()
-
     }
     
     func requestData() {
@@ -51,7 +57,7 @@ class SimpleViewController: UIViewController {
                 }
             } else {
                 print("Erro")
-                //To do: create error screen 
+                //To do: create error screen
             }
         }
     }
@@ -82,11 +88,10 @@ class SimpleViewController: UIViewController {
     
 }
 
-extension SimpleViewController: UICollectionViewDataSource {
+extension MainViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SimpleViewCell.identifier, for: indexPath ) as? SimpleViewCell else { return UICollectionViewCell()}
         cell.configure(with: filtered[indexPath.section].characters[indexPath.row])
-
         return cell
     }
     
@@ -99,14 +104,11 @@ extension SimpleViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let controller = DetailViewController()
-        controller.viewModel.characterList = filtered[indexPath.section].characters[indexPath.row]
-        navigationController?.pushViewController(controller, animated: true)
+        detailCoordinator.showDetailController(wtih: filtered[indexPath.section].characters[indexPath.row])
     }
-    
 }
 
-extension SimpleViewController: UICollectionViewDelegateFlowLayout {
+extension MainViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let paddingSpace = sectionInsets.left * 3
         let availableWidth = collectionView.frame.width - paddingSpace
@@ -137,7 +139,7 @@ extension SimpleViewController: UICollectionViewDelegateFlowLayout {
     }
 }
 
-extension SimpleViewController: UISearchResultsUpdating {
+extension MainViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else { return }
         filtered = []
