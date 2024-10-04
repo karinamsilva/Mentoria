@@ -6,15 +6,16 @@
 //
 
 import UIKit
+import Kingfisher
 
 class SimpleViewCell: UICollectionViewCell {
     
     static let identifier = "SimpleCell"
     
-    private let titleLabel: UILabel = {
+    private let characterName: UILabel = {
         let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
+        label.numberOfLines = 0
         return label
     }()
     
@@ -25,7 +26,7 @@ class SimpleViewCell: UICollectionViewCell {
     }
     
     func configureUI() {
-        contentView.addSubview(titleLabel)
+        contentView.addSubview(characterName)
         contentView.backgroundColor = .systemBlue
         contentView.layer.cornerRadius = 8
     }
@@ -34,21 +35,14 @@ class SimpleViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(title: String) {
-        titleLabel.text = title
+    func configure(with character: Character) {
+        characterName.text =  character.name
     }
     
     func setUpConstraints() {
-        titleLabel.centerX(to: centerXAnchor)
-        titleLabel.centerY(to: centerYAnchor)
-        titleLabel.leading(to: contentView.leadingAnchor, constant: 8)
-        titleLabel.trailing(to: contentView.trailingAnchor, constant: -8)
+        characterName.top(to: contentView.topAnchor, constant: 5)
+        characterName.bottom(to: contentView.bottomAnchor, constant: -5)
+        characterName.leading(to: contentView.leadingAnchor)
+        characterName.trailing(to: contentView.trailingAnchor)
     }
 }
-
-
-
-
-
-
-
